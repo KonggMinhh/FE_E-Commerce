@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icon-white {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+        hue-rotate(333deg) brightness(103%) contrast(102%);
+}
+.icon-black {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(12%) saturate(969%)
+        hue-rotate(179deg) brightness(94%) contrast(85%);
 }
