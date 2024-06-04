@@ -1,11 +1,13 @@
 const path = {
     PUBLIC: "/",
-    HOME: "",
+    HOME: "home",
     ALL: "*",
-    LOGIN: "/login",
-    PRODUCTS: "/products",
-    BLOGS: "/blog",
-    PAGES: "/pages",
-    SELLER: "/seller",
+    LOGIN: "login",
+    SHOP: "shop",
+    PRODUCTS: "products",
+    MEGA_MENU: "mega-menu",
+    BLOGS: "blog",
+    PAGES: "pages",
+    SELLER: "seller",
 };
 export default path;

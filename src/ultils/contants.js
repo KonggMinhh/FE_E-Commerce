@@ -8,7 +8,7 @@ export const navigation = [
     {
         id: 2,
         value: "Shop",
-        path: `/${path.HOME}`,
+        path: `/${path.SHOP}`,
     },
     {
         id: 3,
@@ -18,12 +18,12 @@ export const navigation = [
     {
         id: 4,
         value: "Mega Menu",
-        path: `/${path.PRODUCTS}`,
+        path: `/${path.MEGA_MENU}`,
     },
     {
         id: 5,
         value: "Blog",
-        path: `/${path.PRODUCTS}`,
+        path: `/${path.BLOGS}`,
     },
     {
         id: 6,

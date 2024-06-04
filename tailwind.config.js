@@ -7,9 +7,11 @@ module.exports = {
         },
         extend: {
             backgroundImage: {
-               "menu":
-                    "linear-gradient(90deg, #0E947A 8.46%, #0DA487 62.97%)",
+                menu: "linear-gradient(90deg, #0E947A 8.46%, #0DA487 62.97%)",
+                banner: "linear-gradient(90deg, rgba(255, 114, 114, 0.15) 0%, rgba(255, 114, 114, 0.00) 79%)",
+                cta: "linear-gradient(90deg, #FF6B6B 0%, #FF4F4F 100%)",
             },
+
             backgroundColor: {
                 primary: "#0DA487",
             },

@@ -11,3 +11,11 @@
     filter: brightness(0) saturate(100%) invert(31%) sepia(12%) saturate(969%)
         hue-rotate(179deg) brightness(94%) contrast(85%);
 }
+.icon-primary {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(95%) saturate(3404%)
+        hue-rotate(144deg) brightness(98%) contrast(90%);
+}
+.nav-link:hover .nav-icon {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(95%) saturate(3404%)
+        hue-rotate(144deg) brightness(98%) contrast(90%);
+}

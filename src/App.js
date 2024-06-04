@@ -5,12 +5,14 @@ import path from "./ultils/path";
 
 function App() {
     return (
-        <Routes>
-            <Route path={path.PUBLIC} element={<Public />}>
-                <Route path={path.HOME} element={<Home />} />
-                <Route path={path.LOGIN} element={<Login />} />
-            </Route>
-        </Routes>
+        <div className="font-main">
+            <Routes>
+                <Route path={path.PUBLIC} element={<Public />}>
+                    <Route path={path.HOME} element={<Home />} />
+                    <Route path={path.LOGIN} element={<Login />} />
+                </Route>
+            </Routes>
+        </div>
     );
 }
 
