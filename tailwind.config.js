@@ -19,6 +19,9 @@ module.exports = {
                 primary: "#0DA487",
                 "color-text": "#222",
             },
+            clipPath: {
+                "custom-circle": "circle(50% at 50% 100%)",
+            },
         },
         screens: {
             sm: "600px",

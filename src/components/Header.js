@@ -51,7 +51,8 @@ const Header = () => {
                 </div>
             </div>
             {/* Header */}
-            <header className="flex items-center mt-6 sticky top-[42px] z-30">
+            {/* sticky top-[42px] z-30 */}
+            <header className="flex items-center mt-6 ">
                 <div className="container mx-auto flex items-center">
                     {/* Logo  */}
                     <Link to={`/${path.HOME}`}>

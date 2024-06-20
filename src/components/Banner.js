@@ -37,8 +37,14 @@ const Banner = () => {
                             href="#!"
                             className="flex items-center justify-center w-[182px] h-[55px] rounded-[5px] gap-3 text-white bg-cta mt-6"
                         >
-                            <span className="text-lg font-semibold">Shop Now</span>
-                            <img className="icon-white" src={arrowLeft} alt="Arrow" />
+                            <span className="text-lg font-semibold">
+                                Shop Now
+                            </span>
+                            <img
+                                className="icon-white"
+                                src={arrowLeft}
+                                alt="Arrow"
+                            />
                         </Link>
                     </div>
                 </figure>
@@ -46,18 +52,64 @@ const Banner = () => {
             <div className="basis-4/12 flex flex-col gap-6">
                 <figure className="relative w-full h-full pt-[64%]">
                     <img
-                        className="absolute w-full h-full rounded-[10px] object-cover inset-0"
+                        className="absolute w-full h-full rounded-[10px] object-cover inset-0 -scale-100"
                         src={banner2}
                         alt="Banner"
                     />
-                    
+                    <div className="absolute top-1/2 -translate-y-1/2 left-5">
+                        <span className="flex gap-3 items-baseline text-base leading-4 capitalize text-[#222]">
+                            <b className="text-[#FF4F4F] text-[38px] font-semibold leading-[100%]">
+                                45%
+                            </b>
+                            OFF
+                        </span>
+                        <p className="text-[#0DA487] text-[26px] leading-[120%] mt-[7px] font-semibold">
+                            Nut Collection
+                        </p>
+                        <span className="block text-[#4A5568] text-sm leading-[192.857%] tracking-[0.8px] mt-[10px] w-40">
+                            We deliver organic vegetables & fruits
+                        </span>
+                        <Link
+                            href="#!"
+                            className="flex items-center mt-[25px] gap-2 text-[#222] text-base leading-6"
+                        >
+                            Shop Now
+                            <img
+                                className="icon-black text-base"
+                                src={arrowLeft}
+                                alt="Arrow"
+                            />
+                        </Link>
+                    </div>
                 </figure>
                 <figure className="relative w-full h-full pt-[63.50%]">
                     <img
-                        className="absolute w-full h-full rounded-[10px] object-cover inset-0"
+                        className="absolute w-full h-full rounded-[10px] object-cover inset-0 -scale-100"
                         src={banner3}
                         alt="Banner"
                     />
+                    <div className="absolute top-1/2 -translate-y-1/2 left-5">
+                        <p className="text-[#0DA487] text-[26px] font-bold leading-[120%]">
+                            Healthy Food
+                        </p>
+                        <span className="block mt-[10px] text-[#FF4F4F] text-[22px] leading-[120%]">
+                            Organic Market
+                        </span>
+                        <span className="block mt-2 text-sm text-[#4A5568] leading-[192.857%] tracking-[0.8px] w-56">
+                            Start your daily shopping with some Organic food
+                        </span>
+                        <Link
+                            href="#!"
+                            className="flex items-center mt-[25px] gap-2 text-[#222] text-base leading-6"
+                        >
+                            Shop Now
+                            <img
+                                className="icon-black text-base"
+                                src={arrowLeft}
+                                alt="Arrow"
+                            />
+                        </Link>
+                    </div>
                 </figure>
             </div>
         </section>

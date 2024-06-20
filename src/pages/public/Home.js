@@ -1,7 +1,12 @@
-import React from "react";
-import { Banner } from "../../components";
+import React, { Fragment } from "react";
+import { Banner, SaleTop } from "../../components";
 const Home = () => {
-    return <Banner></Banner>;
+    return (
+        <Fragment>
+            <Banner></Banner>
+            <SaleTop></SaleTop>
+        </Fragment>
+    );
 };
 
 export default Home;

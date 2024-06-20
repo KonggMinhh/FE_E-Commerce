@@ -8,9 +8,10 @@
         hue-rotate(333deg) brightness(103%) contrast(102%);
 }
 .icon-black {
-    filter: brightness(0) saturate(100%) invert(31%) sepia(12%) saturate(969%)
-        hue-rotate(179deg) brightness(94%) contrast(85%);
+    filter: brightness(0) saturate(100%) invert(5%) sepia(7%) saturate(15%)
+        hue-rotate(6deg) brightness(102%) contrast(82%);
 }
+
 .icon-primary {
     filter: brightness(0) saturate(100%) invert(45%) sepia(95%) saturate(3404%)
         hue-rotate(144deg) brightness(98%) contrast(90%);
@@ -19,3 +20,4 @@
     filter: brightness(0) saturate(100%) invert(45%) sepia(95%) saturate(3404%)
         hue-rotate(144deg) brightness(98%) contrast(90%);
 }
+
