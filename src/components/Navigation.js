@@ -19,21 +19,20 @@ const Navigation = () => {
                     <nav>
                         <ul className="flex items-center">
                             {navigation.map((item) => (
-                            
                                 <li key={item.id}>
                                     <NavLink
                                         to={item.path}
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "group flex items-center gap-[6px] p-2 hover:text-primary nav-link text-primary"
-                                                : "group flex items-center gap-[6px] p-2 text-[#222] hover:text-primary nav-link"
+                                                ? "group flex items-center gap-2 py-2 px-4 hover:text-primary nav-link text-primary"
+                                                : "group flex items-center gap-2 py-2 px-4 text-[#222] hover:text-primary nav-link"
                                         }
                                     >
                                         {item.value}
                                         <img
                                             src={arrow}
                                             alt=""
-                                            className="relative top-[2px] rotate-180 group-hover:rotate-0 transition-all nav-icon"
+                                            className="relative top-[2px]  group-hover:rotate-180 transition-all nav-icon"
                                         />
                                     </NavLink>
                                 </li>
