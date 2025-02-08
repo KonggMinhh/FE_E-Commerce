@@ -29,7 +29,7 @@ const Home = () => {
                             </span>
                         </button>
                     </div>
-                    <div className="flex items-center justify-between flex-col gap-y-[30px]">
+                    <div className="flex items-center justify-between flex-col gap-y-[30px] w-full">
                         <BestSeller></BestSeller>
                     </div>
                 </div>

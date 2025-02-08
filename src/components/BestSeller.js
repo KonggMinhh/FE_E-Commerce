@@ -32,6 +32,7 @@ const BestSeller = () => {
                     Don't miss this opportunity at a special discount just for
                     this week.
                 </p>
+                {/* Tab */}
                 <div className="flex items-center gap-2">
                     {tabs.map((tab) => (
                         <button
@@ -48,7 +49,7 @@ const BestSeller = () => {
                     ))}
                 </div>
             </div>
-            <div className="w-96">
+            <div className="w-full">
                 <Swiper
                     slidesPerView={1}
                     grid={{
