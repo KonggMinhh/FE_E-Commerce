@@ -49,11 +49,11 @@ const BestSeller = () => {
                     ))}
                 </div>
             </div>
-            <div className="w-full">
+            <div className="w-[975px] 2xl:w-[1188px] h-[500px] border border-solid border-[rgba(74, 85, 104, 0.30)] rounded-[10px]">
                 <Swiper
-                    slidesPerView={1}
+                    slidesPerView={5}
                     grid={{
-                        rows: 1,
+                        rows: 2,
                     }}
                     autoplay={{
                         delay: 2500,
