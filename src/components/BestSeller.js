@@ -49,9 +49,9 @@ const BestSeller = () => {
                     ))}
                 </div>
             </div>
-            <div className="w-[975px] 2xl:w-[1188px] h-[500px] border border-solid border-[rgba(74, 85, 104, 0.30)] rounded-[10px]">
+            <div className="w-[975px] 2xl:w-[1188px] border border-solid border-[rgba(74, 85, 104, 0.30)] rounded-[10px]">
                 <Swiper
-                    slidesPerView={5}
+                    slidesPerView={3}
                     grid={{
                         rows: 2,
                     }}

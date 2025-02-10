@@ -1,12 +1,12 @@
 import React from "react";
-
+import noImageProduct from "../assets/icons/no-image-product.svg";
 const CardProduct = ({ productData }) => {
     return (
         <article className="p-4 flex flex-col gap-4  justify-center border border-solid border-[rgba(74, 85, 104, 0.30)]">
             <figure className="pt-[100%] relative w-full h-full">
                 <img
                     className="absolute inset-0 object-contain"
-                    src={productData?.images[0] || ""}
+                    src={productData?.images[1] || noImageProduct}
                     alt={productData?.title}
                 />
             </figure>
@@ -25,5 +25,5 @@ const CardProduct = ({ productData }) => {
             </div>
         </article>
     );
-}; 
+};
 export default CardProduct;
