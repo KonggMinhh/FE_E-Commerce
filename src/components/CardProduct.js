@@ -5,6 +5,14 @@ import { formatMoney } from "../ultils/helper";
 const CardProduct = ({ productData }) => {
     return (
         <article className="p-4 flex flex-col gap-4  justify-center border border-solid border-[rgba(74, 85, 104, 0.30)]">
+            {/* New */}
+            <div className="relative w-[60px] h-[31px] flex items-center justify-center bg-[#FFBA00] before:content-[''] before:absolute  before:bg-transparent before:top-0 before:-right-4 before:border-[16px] before:border-solid before:border-t-[#FFBA00] before:border-x-transparent before:border-b-transparent">
+                <span className="uppercase text-white text-sm font-bold">
+                    New
+                </span>
+            </div>
+
+            {/* Thumb */}
             <figure className="pt-[100%] relative w-full h-full">
                 <img
                     className="absolute inset-0 object-contain"
@@ -12,6 +20,7 @@ const CardProduct = ({ productData }) => {
                     alt={productData?.title}
                 />
             </figure>
+            {/* Content */}
             <div>
                 {/* Title product */}
                 <h3 className="text-sm text-[#222] font-semibold leading-[157.143%]">
