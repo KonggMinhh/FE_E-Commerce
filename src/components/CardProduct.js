@@ -30,8 +30,7 @@ const CardProduct = ({ productData }) => {
                 <span className="block text-[15px] text-[#0DA487] font-semibold leading-[140%] mt-[3px]">
                     {`${formatMoney(productData?.price)}`}
                 </span>
-                {/* Rating start */}
-
+                {/* Rating start */
 
                 {/* Button Add */}
                 <button className="relative flex justify-content items-center mt-[10px] h-[42.5px] w-full rounded-[50px] bg-[#F8F8F8] py-[2px] px-1">
