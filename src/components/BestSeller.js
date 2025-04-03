@@ -13,18 +13,27 @@ const BestSeller = () => {
     const [bestSellers, setBestSellers] = useState(null);
     const [newProducts, setNewProducts] = useState(null);
     const [activedTab, setActivedTab] = useState(1);
+    const [products, setProducts] = useState(null);
     const fetchProducts = async () => {
         const response = await Promise.all([
             apiGetProducts({ sort: "-sold" }),
             apiGetProducts({ sort: "-createdAt" }),
         ]);
-        if (response[0]?.success) setBestSellers(response[0].products);
+        if (response[0]?.success) {
+            setBestSellers(response[0].products);
+            setProducts(response[0].products);
+            console.log(response, "success");
+        }
         if (response[1]?.success) setNewProducts(response[1].products);
-        console.log(bestSellers);
+        setProducts(response[0].products);
     };
     useEffect(() => {
         fetchProducts();
     }, []);
+    useEffect(() => {
+        if (activedTab === 1) setProducts(bestSellers);
+        if (activedTab === 2) setProducts(newProducts);
+    }, [activedTab]);
     return (
         <Fragment>
             <div className="flex flex-1 items-center justify-between w-full">
@@ -43,6 +52,13 @@ const BestSeller = () => {
                                     : ""
                             }`}
                             onClick={() => setActivedTab(tab.id)}
+                            // onClick={(event) => {
+                            //     console.log("Click event:", event);
+                            //     console.log("Tab ID:", tab.id);
+                            //     setActivedTab(tab.id);
+                            // }}
+
+                            // debug console.log onclick
                         >
                             {tab.name}
                         </button>
@@ -67,11 +83,12 @@ const BestSeller = () => {
                     modules={[Autoplay, Grid, Pagination, Navigation]}
                     className="mySwiper"
                 >
-                    {bestSellers?.map((product) => (
+                    {products?.map((product) => (
                         <SwiperSlide>
                             <CardProduct
-                                key={bestSellers.id}
+                                key={product.id}
                                 productData={product}
+                                isNew={activedTab === 1 ? false : true}
                             />
                         </SwiperSlide>
                     ))}

@@ -2,13 +2,20 @@ import React from "react";
 import noImageProduct from "../assets/icons/no-image-product.svg";
 import addIcon from "../assets/icons/add.svg";
 import { formatMoney } from "../ultils/helper";
-const CardProduct = ({ productData }) => {
+const CardProduct = ({ productData, isNew }) => {
     return (
-        <article className="p-4 flex flex-col gap-4  justify-center border border-solid border-[rgba(74, 85, 104, 0.30)]">
+        <article className="relative p-4 flex flex-col gap-4 justify-center border border-solid border-[rgba(74, 85, 104, 0.30)]">
             {/* New */}
-            <div className="relative w-[60px] h-[31px] flex items-center justify-center bg-[#FFBA00] before:content-[''] before:absolute  before:bg-transparent before:top-0 before:-right-4 before:border-[16px] before:border-solid before:border-t-[#FFBA00] before:border-x-transparent before:border-b-transparent">
+            {isNew && (
+                <div className="absolute z-10 left-0 top-6 w-[60px] h-[31px] flex items-center justify-center bg-[#FFBA00] before:content-[''] before:absolute before:bg-transparent before:top-0 before:-right-4 before:border-[16px] before:border-solid before:border-t-[#FFBA00] before:border-x-transparent before:border-b-transparent after:content-[''] after:absolute after:bg-transparent after:bottom-0 after:-right-4 after:border-[16px] after:border-solid after:border-t-transparent after:border-x-transparent after:border-b-[#FFBA00]">
+                    <span className="uppercase text-white text-sm font-bold">
+                        New
+                    </span>
+                </div>
+            )}
+            <div className="absolute z-10 left-0 top-6 w-[60px] h-[31px] flex items-center justify-center bg-[#FFBA00] before:content-[''] before:absolute before:bg-transparent before:top-0 before:-right-4 before:border-[16px] before:border-solid before:border-t-[#FFBA00] before:border-x-transparent before:border-b-transparent after:content-[''] after:absolute after:bg-transparent after:bottom-0 after:-right-4 after:border-[16px] after:border-solid after:border-t-transparent after:border-x-transparent after:border-b-[#FFBA00]">
                 <span className="uppercase text-white text-sm font-bold">
-                    New
+                    Old
                 </span>
             </div>
 
